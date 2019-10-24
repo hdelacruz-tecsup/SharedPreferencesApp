@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EncuestaActivity">
+
+    <TextView
+        android:id="@+id/nombres_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del usuario:"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/fullname1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/nombres_text"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        tools:text="Eric benites"/>
+
+    <TextView
+        android:id="@+id/carrera_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese su carrera:"
+        android:layout_below="@+id/fullname1_text"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/fullname2_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/carrera_text"
+        android:padding="12dp"
+        android:hint="Diseño de Software"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullname2_text"
+            android:layout_marginTop="30dp">
+
+            <RadioButton
+                android:id="@+id/male_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"/>
+            <RadioButton
+                android:id="@+id/famale_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="femenino"
+
+                />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/acept_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group"
+            android:text="Acepto terminos y Condiciones"
+            android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/enviar_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/acept_checkbox"
+        android:layout_marginTop="30dp"
+        android:text="Enviar"/>
+
+
+
+
+</RelativeLayout>
